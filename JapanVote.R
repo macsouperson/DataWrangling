@@ -1,10 +1,13 @@
 ##Omar Masood | PubPol 577 | Task 5
+install.packages("ggeffects")
 
+library(ggeffects)
 library(dplyr)
 library(haven)
 library(estimatr)
+library(ggplot2)
 
-load("PubPol477577Task5W23.RData")
+load("oecd.RData")
 
 #Q1a
 cor(OECD$longir,OECD$unemp, use="complete.obs")
